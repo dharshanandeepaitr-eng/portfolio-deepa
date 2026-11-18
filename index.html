@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #080b1c;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 7%;
+    background: #10152b;
+}
+
+header h2 {
+    margin: 0;
+}
+
+span {
+    color: #aa70ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 35px;
+    flex-wrap: wrap;
+}
+
+.profile img {
+    width: 250px;
+    height: 280px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+.details {
+    max-width: 550px;
+}
+
+.details h1 {
+    font-size: 38px;
+}
+
+.details h2 {
+    color: #aa70ff;
+}
+
+.details p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+button {
+    background: #aa70ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #10152b;
+    padding: 25px 10px;
+    gap: 20px;
+}
+
+.card {
+    width: 200px;
+    text-align: center;
+}
+
+.card p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #aaa;
+}
+
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .details h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2><span>Deepa</span>Dharshanan</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container" id="home">
+
+    <div class="details">
+
+        <h2>Hello, I'm</h2>
+
+        <h1>DeepaDharshanan M</h1>
+
+        <h2>IT Student | Developer | Designer</h2>
+
+        <p>
+        I'm passionate about creating beautiful
+        websites and learning new technologies.
+        I enjoy designing and developing
+        creative web applications.
+        </p>
+
+        <button onclick="location.href='#contact'">
+        Contact Me
+        </button>
+
+    </div>
+
+    <div class="profile">
+        <img src="deepapicture.jpeg" alt="Profile Photo">
+    </div>
+
+</div>
+
+<div class="info">
+
+    <div class="card" id="about">
+        <h2><span>About Me</span></h2>
+        <p>
+        I am an IT student interested in
+        web development and creative design.
+        </p>
+    </div>
+
+    <div class="card" id="skills">
+        <h2><span>My Skills</span></h2>
+        <p>HTML | CSS | JavaScript</p>
+        <p>Python | UI/UX Design</p>
+    </div>
+
+    <div class="card">
+        <h2><span>Projects</span></h2>
+        <p>Portfolio Website</p>
+        <p>Food Delivery Website</p>
+        <p>Leave Management System</p>
+    </div>
+
+    <div class="card" id="contact">
+        <h2><span>Contact</span></h2>
+        <p>Email:</p>
+        <p>deepadharshanan4@gmail.com</p>
+        <p>Tamil Nadu, India</p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 DeepaDharshanan | My Portfolio
+</footer>
+
+</body>
+</html>
